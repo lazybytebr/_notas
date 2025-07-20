@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Apresentação com Markdown</title>
+  <title>Slides Dinâmicos</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
 </head>
@@ -10,7 +10,8 @@
 
 <div class="reveal">
   <div class="slides">
-    <section data-markdown="slides.md"
+    <section id="markdown-slide"
+             data-markdown
              data-separator="^---$"
              data-separator-vertical="^--$"
              data-separator-notes="^Note:"
@@ -22,7 +23,19 @@
 <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+
 <script>
+  // Função para obter o parâmetro da URL
+  function getParam(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
+  }
+
+  // Define qual arquivo carregar
+  const aula = getParam("aula") || "tema1"; // fallback se não tiver param
+  const markdownSection = document.querySelector("#markdown-slide");
+  markdownSection.setAttribute("data-markdown", `${aula}.md`);
+
   Reveal.initialize({
     hash: true,
     plugins: [ RevealMarkdown, RevealHighlight ]
