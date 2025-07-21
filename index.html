@@ -5,6 +5,69 @@
   <title>Slides Dinâmicos</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+    .reveal {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.8rem;
+      color: #1e1e1e;
+      background: #f9f9f9;
+    }
+
+    .reveal h1, .reveal h2, .reveal h3 {
+      color: #004d4d;
+      font-weight: 600;
+    }
+
+    .reveal .slides {
+      padding: 60px;
+      text-align: left;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .reveal p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .reveal a {
+      color: #007a7a;
+      text-decoration: underline;
+    }
+
+    .reveal .transition-slide-ubdteal {
+      background-color: #dff0f0 !important;
+      transition: background-color 1s ease-in-out;
+    }
+
+    .two-columns {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .reveal .slides section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #markdown-slide section h2
+    {
+      width: 60vw;
+      margin-bottom: 4rem;
+    }
+
+  </style>
 </head>
 <body>
 
@@ -32,7 +95,7 @@
   }
 
   // Define qual arquivo carregar
-  const aula = getParam("aula") || "tema1"; // fallback se não tiver param
+  const aula = getParam("aula") || "_lista"; // fallback se não tiver param
   const markdownSection = document.querySelector("#markdown-slide");
   markdownSection.setAttribute("data-markdown", `${aula}.md`);
 
