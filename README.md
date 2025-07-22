@@ -1,5 +1,6 @@
 # _notas
 
+```mermaid
 usecaseDiagram
 
 actor Cliente
@@ -17,3 +18,4 @@ Esteticista --> (Preencher Anamnese)
 Administrador --> (Gerenciar Usuários)
 Administrador --> (Visualizar Relatórios)
 Administrador --> (Configurar Sistema)
+```
