@@ -131,17 +131,11 @@ Ela ajuda desenvolvedores, analistas e clientes a entenderem melhor como o siste
     
 Se estiver em dúvida, pense:
 
-Tem lógica ou apenas exibe dados?
+Tem lógica ou apenas exibe dados? Lógica? → Médio ou Complexo
 
-    Lógica? → Médio ou Complexo
+Tem personalização ou é padrão? Personalizado? → Complexo
 
-Tem personalização ou é padrão?
-
-    Personalizado? → Complexo
-
-Precisa integrar com outras funções (ex: assinatura, upload)?
-
-    Integra? → Complexo
+Precisa integrar com outras funções (ex: assinatura, upload)? Integra? → Complexo
 
 Para sistemas simples: use 1h por ponto.
 
@@ -150,5 +144,7 @@ Para sistemas com muita lógica ou integração: use até 2h por ponto.
 Valor por ponto = (Valor da hora) × (Horas estimadas por ponto)
 
 [Planilha de Preços](https://docs.google.com/spreadsheets/d/19E__F9qoIvOXFIrDGJTBpDjYWBebUtsj/edit?usp=sharing&ouid=114030697287765904573&rtpof=true&sd=true)
+
+R$ 25/hora (iniciante/freelancer) - R$ 50/hora (nível júnior) - R$ 80/hora (nível pleno, como referência)
 
 </span>
