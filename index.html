@@ -95,7 +95,7 @@
   }
 
   // Define qual arquivo carregar
-  const aula = getParam("aula") || "_lista"; // fallback se não tiver param
+  const aula = getParam("aula") || "lista"; // fallback se não tiver param
   const markdownSection = document.querySelector("#markdown-slide");
   markdownSection.setAttribute("data-markdown", `${aula}.md`);
 
